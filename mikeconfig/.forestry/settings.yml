@@ -4,6 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: two
+  label: mike label two
+  match: "**/*"
+- type: document
+  path: one
+  label: mike label one
+  match: "**/*"
+  read_only: false
 - type: directory
   path: mikeconfig/content
   label: Pages
